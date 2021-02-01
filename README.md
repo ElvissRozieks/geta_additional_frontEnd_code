@@ -1,5 +1,5 @@
 # GETA
-This is GETA Digital test [Website Live](https://geta.elviss.work)
+This is GETA Digital test
 
 ## For this build used technologies:
 
