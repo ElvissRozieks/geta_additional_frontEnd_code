@@ -1,0 +1,12 @@
+@media (max-width: $breakpoint-tablet) {
+  footer{
+    .footer-container-inner{
+      .footer-main{
+        .footer-column{
+          flex:1 100%;
+          margin-bottom: $footercolum;
+        }
+      }
+    }
+  }
+}

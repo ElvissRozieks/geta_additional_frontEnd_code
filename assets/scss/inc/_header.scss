@@ -1,0 +1,119 @@
+#header-container{
+  width: 100%;
+  &.content-absolute{
+    z-index: 99;
+  }
+  .header-container-inner{
+    height: 6.875em;
+    border-bottom: 1px solid $lineColour;
+    ul{
+      li{
+        a{
+          color:$white;
+          opacity: 1;
+          &:hover{
+            opacity: $mainreducedopacity;
+          }
+        }
+      }
+    }
+    a{
+      font-size: $pretext;
+    }
+    .header-left{
+      .basket-button{
+        .button-default{
+          padding: 1.4335em 2.86em;
+          span{
+            &:first-of-type{
+              margin-right: .5em;
+            }
+          }
+          svg{
+            width: $fontdefaultsize;
+          }
+        }
+        .hamburger-menu-container{
+          display: none;
+          height: 100%;
+          cursor: pointer;
+          margin-left: 1em;
+          .mtc-burger{
+            .bar.mtc-bar{
+              position: relative;
+              top: 0vh;
+              @include transition(all,$defaultms,ease);
+              vertical-align: middle;
+              background: $white;
+              width: $hamburgermenuwidth+em;
+              height: $hamburgermenuheight;
+              margin: 0 auto;
+              &:before{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: $hamburgermenuspaces;
+                background: $white;
+                margin: 0 auto;
+                width: $hamburgermenuwidth+em;
+                height: $hamburgermenuheight;
+              }
+              &:after{
+                content: "";
+                position: absolute;
+                left: 0;
+                margin: 0 auto;
+                top: $hamburgermenuspaces;
+                background: $white;
+                width: $hamburgermenuwidth - $hamburgermenureduce + em;
+                height: $hamburgermenuheight;
+              }
+            }
+          }
+          &:hover{
+            .mtc-burger{
+              .bar.mtc-bar{
+                &:after{
+                  width: $hamburgermenuwidth + em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .header-right{
+      .nav-item-wrapper{
+        margin-left: auto;
+        .nav-container-side{
+          li{
+            &:first-of-type{
+              margin-right: 3em;
+            }
+          }
+        }
+      }
+      .header-social{
+        .social-items{
+          li{
+            margin-right: .5em;
+            &:last-of-type{
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    .header-left{
+      .nav-item-wrapper{
+        .nav-container-side{
+          li{
+            &:first-of-type{
+              margin-right: 2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

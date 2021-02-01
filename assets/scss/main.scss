@@ -1,0 +1,23 @@
+// Normalize from npm
+@import 'addons/normalize';
+// Globals
+@import 'inc/variables';
+@import 'inc/mixins';
+@import 'inc/fonts';
+@import 'inc/global';
+// Main Parts ( Heading and Footer )
+@import 'inc/loader';
+@import 'inc/header';
+@import 'inc/sidemenu';
+@import 'inc/footer';
+// Sections
+@import 'inc/slider';
+@import 'inc/doubleBlock';
+@import 'inc/testimonials';
+@import 'inc/gallery';
+@import 'inc/footer';
+// Responsive
+@import 'responsive/global';
+@import 'responsive/header';
+@import 'responsive/sections';
+@import 'responsive/footer';

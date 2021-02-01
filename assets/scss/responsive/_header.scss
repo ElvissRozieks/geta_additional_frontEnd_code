@@ -1,0 +1,67 @@
+@media (max-width: $breakpoint-small-desktop) {
+  #header-container{
+    .header-container-inner{
+      .header-right{
+        .nav-item-wrapper{
+          margin-left: auto;
+          .nav-container-side{
+            li{
+              &:first-of-type{
+                margin-right: 1em !important;
+              }
+            }
+          }
+        }
+      }
+      .header-middle{
+        flex: .5;
+      }
+      .header-left{
+        .nav-item-wrapper{
+          .nav-container-side{
+            li{
+              &:first-of-type{
+                margin-right: 1em !important;
+              }
+            }
+          }
+        }
+        .basket-button{
+          .button-default{
+            padding: 1.4335em 1.86em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  #header-container{
+    .header-container-inner{
+      .header-right{
+        display: none !important;
+      }
+      .header-middle{
+        flex: 1;
+        .logo-wrapper{
+          text-align: left;
+        }
+      }
+      .header-left{
+        flex:2;
+        .header-left-inner{
+          justify-content: flex-end;
+          .nav-item-wrapper{
+            display: none !important;
+          }
+          .basket-button{
+            .hamburger-menu-container{
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+}

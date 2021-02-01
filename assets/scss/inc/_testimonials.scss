@@ -1,0 +1,48 @@
+section.testomonial-block-module{
+  background-color: $lightinactive;
+  .testomonial-block-inner{
+    padding: 7.500em 0;
+    .testimonial-slider{
+      .testimonial-single-item{
+        .testimonial-single-inner{
+          width: 40%;
+          min-width: 600px;
+          margin: 0 auto;
+          .testimonial-heading{
+            .pre-text{
+              margin-bottom: 1.125em;
+            }
+          }
+          .testimonial-block-button{
+            margin-top: 2.188em;
+          }
+        }
+      }
+      .owl-nav{
+        position: absolute;
+        height: 100%;
+        top: 0;
+        display: flex;
+        width: 100%;
+        pointer-events: none;
+        button{
+          flex: 1;
+          &:focus{
+            outline: none !important;
+          }
+          svg{
+            pointer-events: fill;
+            opacity: 1;
+            @include transition(all,$defaultms,ease);
+            &:hover{
+              opacity: .5;
+            }
+          }
+        }
+      }
+      .owl-dots{
+        display: none !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+section.slider-module{
+  #main-slider{
+    .single-slider-item{
+      img{
+        height:100vh;
+        object-fit: cover;
+      }
+      .single-slider-item-text{
+        width: 90%;
+        margin: 0 auto;
+        span.pre-text{
+          color:$white;
+          @include shadow($pretextshadow);
+        }
+        h1{
+          color:$white;
+          @include shadow($h1shadow);
+        }
+      }
+      .single-slider-item-button{
+        margin-top: $px30margin;
+      }
+    }
+    .owl-dots{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      margin: 1.825em 0;
+      justify-content: center;
+      button{
+        height: 5px;
+        background-color: #fff;
+        width: 3.125em;
+        margin: 0 .5em;
+        border-radius: 5em;
+        display: block;
+        &.active{
+          background-color: $highlightButton;
+        }
+      }
+    }
+    .owl-nav{
+      display: none !important;
+    }
+  }
+}

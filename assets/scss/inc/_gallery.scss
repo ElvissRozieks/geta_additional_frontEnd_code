@@ -1,0 +1,49 @@
+section.gallery-block-module{
+  .gallery-block-inner{
+    margin-top: 5.000em;
+    .gallery-items-wrapper{
+        margin: 2.500em 0;
+        .gallery-items-inner{
+          .gallery-single{
+            margin: 0 $margin;
+            &:first-of-type{
+              margin-left: 0;
+            }
+            &:last-of-type{
+              margin-right: 0;
+            }
+            a{
+              position: relative;
+              width: 100%;
+              img{
+                width: 100%;
+              }
+              .gallery-hover{
+                opacity: 0;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                background-color: $lineargrad;
+                display: flex;
+                @include transition(all,$defaultms,ease);
+                .gallery-hover-inner{
+                  margin: 0 auto;
+                  i{
+                    color: $white;
+                    opacity: $mainreducedopacity;
+                    font-size: $h3;
+                  }
+                }
+              }
+              &:hover{
+                .gallery-hover{
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+    }
+  }
+}
